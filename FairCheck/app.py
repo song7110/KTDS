@@ -47,7 +47,8 @@ rag_params = {
                     "key": AZURE_AI_SEARCH_API_KEY,
                 },
                 # The following params are used to vectorize the query
-                "query_type": "simple",
+                "query_type": "vector",
+                # "query_type": "semantic",
                 "embedding_dependency": {
                     "type": "deployment_name",
                     "deployment_name": DEPLOYMENT_EMBEDDING_NAME,
@@ -204,5 +205,5 @@ if st.session_state.submission.get("title") and st.session_state.submission.get(
     #         st.write(f"- {case['title']}: {case.get('summary','')} (결과: {case.get('outcome','')})")
     ### RAG END ###
 
-if st.button("새로 등록하기"): 
-    st.session_state.clear()
+# if st.button("새로 등록하기"): 
+#     st.session_state.clear()
