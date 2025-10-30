@@ -1,4 +1,4 @@
-# streamlit run fairSample.py
+# streamlit run app.py
 
 import os
 from dotenv import load_dotenv
