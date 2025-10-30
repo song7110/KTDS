@@ -107,7 +107,7 @@ BASE_DIR = os.path.dirname(__file__)
 DATA_DIR = os.path.join(BASE_DIR, "..", "data")
 
 st.set_page_config(page_title="사전심의 입력 및 결과", layout="wide")
-st.title("공정경쟁 사전심의 등록")
+st.title("RAG 기반 공정경쟁 사전심의 Agent")
 
 if "submission" not in st.session_state:
     st.session_state.submission = {}
